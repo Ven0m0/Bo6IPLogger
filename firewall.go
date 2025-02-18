@@ -15,7 +15,7 @@ type QueueFirewall struct {
 }
 
 func setFirewallRule(ip string) error {
-	_, err := exec.Command("netsh", "advfirewall", "firewall", "add", "rule", "name=APEX BLOCK IP ADDRESS - "+ip, "dir=in", "action=block", "protocol=udp", "remoteip="+ip).CombinedOutput()
+	_, err := exec.Command("netsh", "advfirewall", "firewall", "add", "rule", "name=BO6 BLOCK IP ADDRESS - "+ip, "dir=in", "action=block", "protocol=udp", "remoteip="+ip).CombinedOutput()
 	// if err != nil {
 	// 	log.Println(err)
 	// }
