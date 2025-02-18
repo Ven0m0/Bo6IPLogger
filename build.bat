@@ -1,1 +1,1 @@
-go build -ldflags="-w -s" -trimpath -o ApexIPLogger.exe
+go build -ldflags="-w -s" -trimpath -o Bo6IPLogger.exe
