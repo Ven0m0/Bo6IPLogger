@@ -1,4 +1,4 @@
-module ApexIPLogger
+module Bo6IPLogger
 
 go 1.17
 
