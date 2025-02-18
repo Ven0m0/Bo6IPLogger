@@ -18,7 +18,7 @@ func packetLoop(currentDevice string) {
 	runningPacketLoop = true
 	if handle, err := pcap.OpenLive(currentDevice, 1600, true, pcap.BlockForever); err != nil {
 		log.Fatal(err)
-	} else if err := handle.SetBPFFilter("udp and portrange 37005-38515"); err != nil {
+	} else if err := handle.SetBPFFilter("udp and portrange 3074-3075"); err != nil {
 		log.Fatal(err)
 	} else {
 		packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
